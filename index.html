@@ -974,6 +974,243 @@
     text-transform: uppercase;
   }
 
+  /* ═══════════════════════════════
+     EXIT VALUE CREATION
+  ═══════════════════════════════ */
+  .exit-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+    margin-bottom: 8px;
+  }
+
+  .exit-card {
+    background: var(--surface);
+    border: 1px solid rgba(201,168,76,0.12);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+  }
+
+  .exit-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 24px 60px rgba(0,0,0,0.5);
+    border-color: rgba(201,168,76,0.35);
+  }
+
+  .exit-card.featured-exit {
+    border-color: var(--gold);
+    box-shadow: 0 0 35px rgba(201,168,76,0.18);
+  }
+
+  .exit-featured-badge {
+    position: absolute;
+    top: 12px; right: 12px;
+    background: var(--gold);
+    color: var(--obsidian);
+    font-size: 0.5rem;
+    font-weight: 900;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    padding: 3px 8px;
+    border-radius: 2px;
+    z-index: 2;
+  }
+
+  .exit-card-top {
+    padding: 20px 20px 16px;
+    border-bottom: 1px solid rgba(201,168,76,0.12);
+  }
+
+  .exit-horizon {
+    font-size: 0.58rem;
+    letter-spacing: 0.25em;
+    color: var(--gold);
+    text-transform: uppercase;
+    margin-bottom: 6px;
+  }
+
+  .exit-strategy-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--white);
+    line-height: 1.2;
+  }
+
+  .exit-strategy-sub {
+    font-size: 0.6rem;
+    color: var(--silver);
+    letter-spacing: 0.1em;
+    margin-top: 3px;
+  }
+
+  .exit-card-body {
+    padding: 14px 20px 16px;
+  }
+
+  .exit-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.04);
+    font-size: 0.7rem;
+    gap: 8px;
+  }
+
+  .exit-row:last-of-type { border-bottom: none; }
+
+  .exit-key { color: var(--silver); flex-shrink: 0; }
+
+  .exit-val {
+    font-weight: 600;
+    color: var(--white);
+    text-align: right;
+  }
+
+  .exit-val.gold { color: var(--gold-light); }
+  .exit-val.highlight { color: var(--gold-light); }
+  .exit-val.green { color: var(--accent-green); }
+  .exit-val.teal { color: var(--accent-teal); }
+
+  .exit-note {
+    margin-top: 12px;
+    font-size: 0.62rem;
+    color: var(--silver);
+    line-height: 1.6;
+    border-top: 1px solid rgba(201,168,76,0.1);
+    padding-top: 10px;
+    font-style: italic;
+  }
+
+  /* ── WATERFALL TABLE ── */
+  .waterfall-section {
+    background: var(--surface);
+    border: 1px solid rgba(201,168,76,0.15);
+    border-radius: 6px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin-bottom: 8px;
+  }
+
+  .waterfall-header,
+  .waterfall-row {
+    display: grid;
+    grid-template-columns: 2fr 1.3fr 1.5fr 1.3fr 1.1fr 1.1fr 1fr;
+    gap: 0;
+    min-width: 640px;
+  }
+
+  .waterfall-header {
+    background: linear-gradient(90deg, rgba(201,168,76,0.18), rgba(201,168,76,0.05));
+    border-bottom: 1px solid rgba(201,168,76,0.2);
+  }
+
+  .waterfall-header > div,
+  .waterfall-row > div {
+    padding: 11px 14px;
+    font-size: 0.65rem;
+    white-space: nowrap;
+  }
+
+  .waterfall-header > div {
+    font-size: 0.58rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--gold);
+    font-weight: 700;
+  }
+
+  .waterfall-row {
+    border-bottom: 1px solid rgba(255,255,255,0.04);
+    transition: background 0.2s;
+  }
+
+  .waterfall-row:hover { background: rgba(255,255,255,0.03); }
+
+  .waterfall-row.wf-featured {
+    background: rgba(201,168,76,0.07);
+    border-left: 3px solid var(--gold);
+  }
+
+  .wf-col-label {
+    color: var(--white);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .wf-col { color: var(--silver); text-align: right; }
+  .wf-val { color: var(--gold-light); font-weight: 600; }
+  .wf-green { color: var(--accent-green); font-weight: 700; }
+
+  .wf-dot {
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+
+  /* ── VALUE DRIVERS ── */
+  .value-drivers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 16px;
+  }
+
+  .vd-card {
+    background: var(--surface);
+    border: 1px solid rgba(201,168,76,0.1);
+    border-radius: 6px;
+    padding: 20px;
+    transition: border-color 0.3s, transform 0.3s;
+  }
+
+  .vd-card:hover {
+    border-color: rgba(201,168,76,0.35);
+    transform: translateY(-2px);
+  }
+
+  .vd-icon {
+    font-size: 1.6rem;
+    margin-bottom: 8px;
+  }
+
+  .vd-title {
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 6px;
+  }
+
+  .vd-desc {
+    font-size: 0.65rem;
+    color: var(--silver);
+    line-height: 1.65;
+    margin-bottom: 10px;
+  }
+
+  .vd-desc strong { color: var(--gold-light); }
+
+  .vd-impact {
+    font-size: 0.62rem;
+    font-weight: 800;
+    color: var(--accent-green);
+    letter-spacing: 0.08em;
+    padding: 5px 10px;
+    background: rgba(76,175,136,0.1);
+    border-radius: 3px;
+    border: 1px solid rgba(76,175,136,0.2);
+    display: inline-block;
+  }
+
+  @media (max-width: 768px) {
+    .exit-grid { grid-template-columns: 1fr; }
+    .value-drivers-grid { grid-template-columns: 1fr; }
+  }
+
 </style>
 </head>
 <body>
@@ -988,7 +1225,7 @@
     <span>Phuket airport processed <strong>19.7M passengers</strong> in 2024 — second airport in planning</span>
     <span>Phuket projected <strong>84% occupancy</strong> in 2026 — JLL Asia Pacific</span>
     <span>Land values projected <strong>+6–10% p.a.</strong> through 2030 — Investment Property Phuket</span>
-    <strong>PRIME CBD LAND — PATONG BEACH — 2 RAI — THB 900 MILLION</strong>
+    <strong>PRIME CBD LAND — PATONG BEACH — 2 RAI — THB 1,000 MILLION</strong>
     <span>Phuket hotel pipeline: <strong>41 projects</strong> 2026–2030, supply to surpass <strong>100,000 keys</strong></span>
   </div>
 </div>
@@ -1027,11 +1264,11 @@
       </div>
       <div class="hero-price-box">
         <div class="price-label">Asking Price</div>
-        <div class="price-value">฿900M</div>
+        <div class="price-value">฿1,000M</div>
         <div class="price-unit">Thai Baht</div>
         <div class="price-psm">
-          ฿281,250 / sq.m<br>
-          <span style="color:var(--gold-light);">≈ USD 24.7M</span>
+          ฿312,500 / sq.m<br>
+          <span style="color:var(--gold-light);">≈ USD 27.5M</span>
         </div>
       </div>
     </div>
@@ -1629,7 +1866,7 @@
       <div>
         <div class="chart-title">Land Value Upside Scenarios (THB / sq.m)</div>
         <div class="bar-wrap">
-          <div class="bar-header"><span>Current Ask</span><span style="color:var(--gold)">฿281K</span></div>
+          <div class="bar-header"><span>Current Ask</span><span style="color:var(--gold)">฿312K</span></div>
           <div class="bar-bg"><div class="bar-fill" style="width:44%"></div></div>
         </div>
         <div class="bar-wrap">
@@ -1697,11 +1934,204 @@
   </div>
 </section>
 
-<!-- ═══════ SECTION 6 — RISKS ═══════ -->
+<!-- ═══════ SECTION 6 — EXIT VALUE CREATION ═══════ -->
 <section>
   <div class="wrapper">
     <div class="section-header">
       <div class="section-num">06</div>
+      <div class="section-title-block">
+        <div class="section-eyebrow">Exit Strategy & Value Realisation</div>
+        <div class="section-title">Exit Value Creation Framework</div>
+      </div>
+    </div>
+
+    <p style="font-size:0.78rem;color:var(--silver);margin-bottom:28px;max-width:760px;line-height:1.8;">
+      Four distinct exit pathways have been modelled across a 3–10 year horizon. Each strategy targets a different investor profile and capital velocity preference — from rapid land arbitrage to full-cycle institutional asset creation with trophy exit.
+    </p>
+
+    <!-- EXIT PATHWAY CARDS -->
+    <div class="exit-grid">
+
+      <div class="exit-card">
+        <div class="exit-card-top" style="background:linear-gradient(135deg,rgba(201,168,76,0.18),rgba(201,168,76,0.04));">
+          <div class="exit-horizon">3–5 Yr</div>
+          <div class="exit-strategy-name">Land Arbitrage Exit</div>
+          <div class="exit-strategy-sub">Buy · Hold · Sell Entitled</div>
+        </div>
+        <div class="exit-card-body">
+          <div class="exit-row"><span class="exit-key">Entry (2026)</span><span class="exit-val gold">฿1,000M</span></div>
+          <div class="exit-row"><span class="exit-key">With 60m Zoning Approval</span><span class="exit-val gold">+฿300–500M uplift</span></div>
+          <div class="exit-row"><span class="exit-key">Target Exit Value (2029–31)</span><span class="exit-val highlight">฿1,400–1,700M</span></div>
+          <div class="exit-row"><span class="exit-key">Capital Gain</span><span class="exit-val green">฿400–700M</span></div>
+          <div class="exit-row"><span class="exit-key">Equity Multiple</span><span class="exit-val green">1.4× – 1.7×</span></div>
+          <div class="exit-row"><span class="exit-key">Annualised Return</span><span class="exit-val green">12–18% p.a.</span></div>
+          <div class="exit-row"><span class="exit-key">Capital at Risk</span><span class="exit-val teal">Land Only</span></div>
+          <div class="exit-row"><span class="exit-key">Complexity</span><span class="exit-val">⭐ Low</span></div>
+          <div class="exit-note">✦ Pure land appreciation play. Zero development execution risk. Ideal for HNW investors seeking Phuket CBD exposure with minimum capex commitment.</div>
+        </div>
+      </div>
+
+      <div class="exit-card featured-exit">
+        <div class="exit-featured-badge">HIGHEST VALUE</div>
+        <div class="exit-card-top" style="background:linear-gradient(135deg,rgba(201,168,76,0.25),rgba(201,168,76,0.08));">
+          <div class="exit-horizon">7–10 Yr</div>
+          <div class="exit-strategy-name">Stabilised Hotel Asset Sale</div>
+          <div class="exit-strategy-sub">Develop · Operate · Divest</div>
+        </div>
+        <div class="exit-card-body">
+          <div class="exit-row"><span class="exit-key">Total Development Cost</span><span class="exit-val gold">฿2,100–2,300M</span></div>
+          <div class="exit-row"><span class="exit-key">Stabilised NOI (Yr 5)</span><span class="exit-val highlight">฿186–210M p.a.</span></div>
+          <div class="exit-row"><span class="exit-key">Exit Cap Rate</span><span class="exit-val">6.5–7.5%</span></div>
+          <div class="exit-row"><span class="exit-key">Gross Asset Value at Exit</span><span class="exit-val highlight">฿2,480–3,230M</span></div>
+          <div class="exit-row"><span class="exit-key">Net Equity Gain (after debt)</span><span class="exit-val green">฿900–1,400M</span></div>
+          <div class="exit-row"><span class="exit-key">Equity Multiple (10yr)</span><span class="exit-val green">2.1× – 2.9×</span></div>
+          <div class="exit-row"><span class="exit-key">IRR</span><span class="exit-val green">18–22%</span></div>
+          <div class="exit-row"><span class="exit-key">Complexity</span><span class="exit-val">⭐⭐⭐ High</span></div>
+          <div class="exit-note">✦ Flagship strategy. Sell as a stabilised, income-producing trophy hotel to a REIT, sovereign fund or international hospitality brand at premium cap rate compression.</div>
+        </div>
+      </div>
+
+      <div class="exit-card">
+        <div class="exit-card-top" style="background:linear-gradient(135deg,rgba(13,191,191,0.12),rgba(13,191,191,0.03));">
+          <div class="exit-horizon">4–6 Yr</div>
+          <div class="exit-strategy-name">Strata-Title Condo Exit</div>
+          <div class="exit-strategy-sub">Develop · Sell Units · Retain Retail</div>
+        </div>
+        <div class="exit-card-body">
+          <div class="exit-row"><span class="exit-key">Total Development Cost</span><span class="exit-val teal">฿2,300–2,500M</span></div>
+          <div class="exit-row"><span class="exit-key">Units (200–240)</span><span class="exit-val teal">Avg. ฿15–18M each</span></div>
+          <div class="exit-row"><span class="exit-key">Gross Sales Revenue</span><span class="exit-val highlight">฿3,500–4,200M</span></div>
+          <div class="exit-row"><span class="exit-key">Retained Retail (NLA 2,500m²)</span><span class="exit-val teal">฿280–350M value</span></div>
+          <div class="exit-row"><span class="exit-key">Gross Development Profit</span><span class="exit-val green">฿1,200–1,700M</span></div>
+          <div class="exit-row"><span class="exit-key">Equity Multiple</span><span class="exit-val green">2.4× – 3.1×</span></div>
+          <div class="exit-row"><span class="exit-key">IRR</span><span class="exit-val green">24–30%</span></div>
+          <div class="exit-row"><span class="exit-key">Complexity</span><span class="exit-val">⭐⭐⭐ High</span></div>
+          <div class="exit-note">✦ Fastest cash-on-cash return. Pre-sales de-risk construction financing. Retain retail podium as ongoing yield asset post-selldown.</div>
+        </div>
+      </div>
+
+      <div class="exit-card">
+        <div class="exit-card-top" style="background:linear-gradient(135deg,rgba(76,175,136,0.12),rgba(76,175,136,0.03));">
+          <div class="exit-horizon">5–8 Yr</div>
+          <div class="exit-strategy-name">Joint Venture / Brand Partnership</div>
+          <div class="exit-strategy-sub">Co-Develop · Brand License · Partial Exit</div>
+        </div>
+        <div class="exit-card-body">
+          <div class="exit-row"><span class="exit-key">JV Structure</span><span class="exit-val green">60/40 or 70/30</span></div>
+          <div class="exit-row"><span class="exit-key">Land Equity Contribution</span><span class="exit-val green">฿1,000M (in-kind)</span></div>
+          <div class="exit-row"><span class="exit-key">International Brand Premium</span><span class="exit-val highlight">+25–40% ADR uplift</span></div>
+          <div class="exit-row"><span class="exit-key">Partial Exit (sell JV stake Yr 5)</span><span class="exit-val green">฿800M–1,200M</span></div>
+          <div class="exit-row"><span class="exit-key">Retained Yield (remaining stake)</span><span class="exit-val green">7–9% p.a.</span></div>
+          <div class="exit-row"><span class="exit-key">Equity Multiple (blended)</span><span class="exit-val green">1.9× – 2.4×</span></div>
+          <div class="exit-row"><span class="exit-key">Target Partners</span><span class="exit-val teal">Marriott · IHG · Accor</span></div>
+          <div class="exit-row"><span class="exit-key">Complexity</span><span class="exit-val">⭐⭐ Medium</span></div>
+          <div class="exit-note">✦ Contribute land as equity into a branded JV. Minimise cash outlay, leverage international brand distribution, then partially exit at stabilisation premium.</div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- EXIT VALUE WATERFALL -->
+    <div class="divider-line"><span class="divider-label">Exit Value Waterfall — Scenario Comparison</span></div>
+
+    <div class="waterfall-section">
+      <div class="waterfall-header">
+        <div class="wf-col-label">Exit Route</div>
+        <div class="wf-col">Entry Cost</div>
+        <div class="wf-col">Gross Exit Value</div>
+        <div class="wf-col">Net Equity Gain</div>
+        <div class="wf-col">Equity Multiple</div>
+        <div class="wf-col">IRR</div>
+        <div class="wf-col">Timeline</div>
+      </div>
+      <div class="waterfall-row">
+        <div class="wf-col-label"><span class="wf-dot" style="background:var(--gold)"></span>Land Arbitrage</div>
+        <div class="wf-col">฿1,000M</div>
+        <div class="wf-col wf-val">฿1,400–1,700M</div>
+        <div class="wf-col wf-green">฿400–700M</div>
+        <div class="wf-col wf-green">1.4–1.7×</div>
+        <div class="wf-col wf-green">12–18%</div>
+        <div class="wf-col">3–5 yrs</div>
+      </div>
+      <div class="waterfall-row wf-featured">
+        <div class="wf-col-label"><span class="wf-dot" style="background:var(--gold-light)"></span>Hotel Asset Sale ★</div>
+        <div class="wf-col">฿2,100–2,300M</div>
+        <div class="wf-col wf-val">฿2,480–3,230M</div>
+        <div class="wf-col wf-green">฿900–1,400M</div>
+        <div class="wf-col wf-green">2.1–2.9×</div>
+        <div class="wf-col wf-green">18–22%</div>
+        <div class="wf-col">7–10 yrs</div>
+      </div>
+      <div class="waterfall-row">
+        <div class="wf-col-label"><span class="wf-dot" style="background:var(--accent-teal)"></span>Condo Sell-Down</div>
+        <div class="wf-col">฿2,300–2,500M</div>
+        <div class="wf-col wf-val">฿3,780–4,550M</div>
+        <div class="wf-col wf-green">฿1,200–1,700M</div>
+        <div class="wf-col wf-green">2.4–3.1×</div>
+        <div class="wf-col wf-green">24–30%</div>
+        <div class="wf-col">4–6 yrs</div>
+      </div>
+      <div class="waterfall-row">
+        <div class="wf-col-label"><span class="wf-dot" style="background:var(--accent-green)"></span>JV Brand Partnership</div>
+        <div class="wf-col">฿1,000M (land)</div>
+        <div class="wf-col wf-val">฿1,800–2,200M</div>
+        <div class="wf-col wf-green">฿800–1,200M</div>
+        <div class="wf-col wf-green">1.9–2.4×</div>
+        <div class="wf-col wf-green">16–22%</div>
+        <div class="wf-col">5–8 yrs</div>
+      </div>
+    </div>
+
+    <!-- VALUE CREATION DRIVERS -->
+    <div class="divider-line"><span class="divider-label">Value Creation Drivers & Catalysts</span></div>
+
+    <div class="value-drivers-grid">
+      <div class="vd-card">
+        <div class="vd-icon">🏗️</div>
+        <div class="vd-title">Zoning Uplift Catalyst</div>
+        <div class="vd-desc">Passage of 60m height legislation immediately re-rates the land from ~฿312K/m² to an estimated <strong>฿480–550K/m²</strong> — a 54–76% value creation event with zero additional capex.</div>
+        <div class="vd-impact">+฿540–760M Potential Gain</div>
+      </div>
+      <div class="vd-card">
+        <div class="vd-icon">✈️</div>
+        <div class="vd-title">Infrastructure Premium</div>
+        <div class="vd-desc">Kathu–Patong Expressway completion permanently expands the site's addressable catchment. Studies show 15–25% ADR and land value premiums within 1km of new expressway nodes in Thailand.</div>
+        <div class="vd-impact">+15–25% ADR Premium</div>
+      </div>
+      <div class="vd-card">
+        <div class="vd-icon">🌍</div>
+        <div class="vd-title">Brand Affiliation Premium</div>
+        <div class="vd-desc">Attaching an international 5-star brand (Marriott, IHG, Accor) delivers a documented 30–45% cap rate compression at exit versus unbranded assets — the single largest value unlock in hotel development.</div>
+        <div class="vd-impact">30–45% Cap Rate Compression</div>
+      </div>
+      <div class="vd-card">
+        <div class="vd-icon">📈</div>
+        <div class="vd-title">Secular Land Scarcity</div>
+        <div class="vd-desc">Patong CBD has zero comparable replacement sites. Each passing year tightens the land supply irreversibly. Conservative 8% p.a. compounding appreciation adds ฿80M+ annually to the raw land value alone.</div>
+        <div class="vd-impact">฿80M+ / Year Passive Gain</div>
+      </div>
+      <div class="vd-card">
+        <div class="vd-icon">🏦</div>
+        <div class="vd-title">REIT / Institutional Exit</div>
+        <div class="vd-desc">Thailand's REIT market and regional institutional capital (Singapore GIC, Japanese REITs, Middle East SWFs) are actively seeking stabilised Phuket assets. A trophy hotel here commands premium exit multiples above market.</div>
+        <div class="vd-impact">6.0–6.5% Exit Cap Rate</div>
+      </div>
+      <div class="vd-card">
+        <div class="vd-icon">💎</div>
+        <div class="vd-title">Scarcity × Location Premium</div>
+        <div class="vd-desc">The combination of freehold title, CBD position, 68m frontage, and park adjacency creates a compound scarcity premium that is literally unreplicable. Comparable sites in Bangkok's CBD trade at ฿600K–1.2M/m².</div>
+        <div class="vd-impact">฿312K vs ฿600K–1.2M Peer Gap</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════ SECTION 7 — RISKS ═══════ -->
+<section>
+  <div class="wrapper">
+    <div class="section-header">
+      <div class="section-num">07</div>
       <div class="section-title-block">
         <div class="section-eyebrow">Due Diligence</div>
         <div class="section-title">Risk Register & Mitigants</div>
@@ -1750,14 +2180,14 @@
       <div style="font-size:0.62rem;letter-spacing:0.3em;color:var(--gold);text-transform:uppercase;margin-bottom:10px;">CFO / Senior Analyst Verdict</div>
       <div class="verdict-title">A Generational CBD Land Acquisition</div>
       <p class="verdict-text">
-        At ฿281,250 per sq.m, this site is priced at a discount to its intrinsic development value and land scarcity premium. With Phuket's proven hospitality fundamentals — 79.5% hotel occupancy, THB 7,005 ADR, and 6–10% annual land appreciation — the risk-adjusted return profile across all three development scenarios materially exceeds regional alternatives. The proposed 60-metre height legislation represents a binary upside catalyst that could re-rate the site value by 50–95%. For an institutional investor, family office, or hospitality developer seeking irreplaceable Patong CBD exposure, this is a compelling, time-sensitive opportunity.
+        At ฿312,500 per sq.m — with four proven exit pathways delivering 1.4×–3.1× equity multiples and IRRs of 12–30% — this site is priced at a compelling discount to its intrinsic development and scarcity value. With Phuket's proven hospitality fundamentals — 79.5% hotel occupancy, THB 7,005 ADR, and 6–10% annual land appreciation — the risk-adjusted return profile across all three development scenarios materially exceeds regional alternatives. The proposed 60-metre height legislation represents a binary upside catalyst that could re-rate the site value by 50–95%. For an institutional investor, family office, or hospitality developer seeking irreplaceable Patong CBD exposure, this is a compelling, time-sensitive opportunity.
       </p>
       <div style="margin-top:20px;display:flex;justify-content:center;gap:12px;flex-wrap:wrap;">
         <span class="pill">IRR 18–30%</span>
         <span class="pill">Freehold Title</span>
         <span class="pill">Scarcity Asset</span>
         <span class="pill">60m Upside Catalyst</span>
-        <span class="pill">฿900M Asking</span>
+        <span class="pill">฿1,000M Asking</span>
       </div>
     </div>
   </div>
@@ -1789,7 +2219,7 @@
 
 <div class="gold-rule"></div>
 <div class="disclaimer">
-  This investment prospectus has been prepared for informational purposes only and does not constitute financial, legal or investment advice. All financial projections are indicative estimates based on market data from Knight Frank Thailand, Cushman &amp; Wakefield, C9 Hotelworks, JLL Asia Pacific, CBRE Thailand and publicly available sources (2025–2026). Actual results may vary materially. Prospective investors should conduct independent due diligence and seek professional advice before making any investment decision. All prices in Thai Baht (฿). USD equivalent calculated at ฿36.40/USD. Prepared by Joe Collection · May 2026.
+  This investment prospectus has been prepared for informational purposes only and does not constitute financial, legal or investment advice. All financial projections are indicative estimates based on market data from Knight Frank Thailand, Cushman &amp; Wakefield, C9 Hotelworks, JLL Asia Pacific, CBRE Thailand and publicly available sources (2025–2026). Actual results may vary materially. Prospective investors should conduct independent due diligence and seek professional advice before making any investment decision. All prices in Thai Baht (฿). Asking Price ฿1,000M · USD equivalent at ฿36.40/USD (≈ USD 27.5M). Prepared by Joe Collection · May 2026.
 </div>
 
 </body>
