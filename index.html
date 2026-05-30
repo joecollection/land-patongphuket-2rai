@@ -1,0 +1,1796 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prime Commercial Land — Patong Beach, Phuket | JOE COLLECTION</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Montserrat:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --gold: #C9A84C;
+    --gold-light: #E8D08A;
+    --gold-dark: #8B6914;
+    --obsidian: #0A0A0F;
+    --deep: #0F0F1A;
+    --mid: #161624;
+    --surface: #1C1C2E;
+    --surface2: #222238;
+    --white: #F5F0E8;
+    --silver: #A8A8B8;
+    --accent-teal: #0DBFBF;
+    --accent-red: #E85555;
+    --accent-green: #4CAF88;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: var(--obsidian);
+    color: var(--white);
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
+
+  /* ─── GRAIN OVERLAY ─── */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+    pointer-events: none;
+    z-index: 0;
+    opacity: 0.3;
+  }
+
+  /* ─── WRAPPER ─── */
+  .wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+    z-index: 1;
+  }
+
+  /* ─── GOLD LINE ─── */
+  .gold-rule {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--gold), transparent);
+    margin: 0 auto;
+    width: 80%;
+  }
+
+  /* ═══════════════════════════════
+     HERO / HEADER
+  ═══════════════════════════════ */
+  .hero {
+    position: relative;
+    background: linear-gradient(160deg, #0A0A0F 0%, #10101E 40%, #151528 100%);
+    border-bottom: 1px solid rgba(201,168,76,0.2);
+    padding: 0 0 48px;
+    overflow: hidden;
+  }
+
+  .hero::after {
+    content: '';
+    position: absolute;
+    top: -60px; right: -60px;
+    width: 420px; height: 420px;
+    background: radial-gradient(circle, rgba(201,168,76,0.08) 0%, transparent 70%);
+    pointer-events: none;
+  }
+
+  /* Top bar */
+  .topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 32px;
+    border-bottom: 1px solid rgba(201,168,76,0.15);
+  }
+
+  .brand-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .brand-diamond {
+    width: 28px; height: 28px;
+    background: linear-gradient(135deg, var(--gold-light), var(--gold-dark));
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  }
+
+  .brand-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.1rem;
+    letter-spacing: 0.25em;
+    color: var(--gold-light);
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  .topbar-right {
+    text-align: right;
+    font-size: 0.65rem;
+    letter-spacing: 0.15em;
+    color: var(--silver);
+    text-transform: uppercase;
+  }
+
+  .topbar-right span {
+    display: block;
+    color: var(--gold);
+    font-size: 0.7rem;
+    font-weight: 600;
+  }
+
+  /* Hero content */
+  .hero-content {
+    padding: 48px 32px 0;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 32px;
+    align-items: start;
+  }
+
+  .hero-label {
+    font-size: 0.65rem;
+    letter-spacing: 0.35em;
+    color: var(--gold);
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .hero-label::before {
+    content: '';
+    display: inline-block;
+    width: 24px; height: 1px;
+    background: var(--gold);
+  }
+
+  .hero-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(2.2rem, 5vw, 3.8rem);
+    font-weight: 700;
+    line-height: 1.1;
+    color: var(--white);
+  }
+
+  .hero-title em {
+    font-style: italic;
+    color: var(--gold-light);
+  }
+
+  .hero-subtitle {
+    font-size: 0.75rem;
+    letter-spacing: 0.2em;
+    color: var(--silver);
+    text-transform: uppercase;
+    margin-top: 14px;
+  }
+
+  .hero-price-box {
+    background: linear-gradient(135deg, rgba(201,168,76,0.12), rgba(201,168,76,0.04));
+    border: 1px solid rgba(201,168,76,0.4);
+    border-radius: 4px;
+    padding: 20px 24px;
+    text-align: center;
+    min-width: 180px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero-price-box::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, var(--gold-dark), var(--gold-light), var(--gold-dark));
+  }
+
+  .price-label {
+    font-size: 0.6rem;
+    letter-spacing: 0.25em;
+    color: var(--silver);
+    text-transform: uppercase;
+    margin-bottom: 6px;
+  }
+
+  .price-value {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--gold-light);
+    line-height: 1;
+  }
+
+  .price-unit {
+    font-size: 0.65rem;
+    color: var(--gold);
+    letter-spacing: 0.1em;
+    margin-top: 4px;
+  }
+
+  .price-psm {
+    font-size: 0.68rem;
+    color: var(--silver);
+    margin-top: 8px;
+    padding-top: 8px;
+    border-top: 1px solid rgba(201,168,76,0.2);
+  }
+
+  /* ─── HERO STATS STRIP ─── */
+  .stats-strip {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+    background: rgba(201,168,76,0.15);
+    margin-top: 40px;
+    border-top: 1px solid rgba(201,168,76,0.15);
+  }
+
+  .stat-cell {
+    background: var(--deep);
+    padding: 20px 24px;
+    text-align: center;
+    transition: background 0.3s;
+  }
+
+  .stat-cell:hover { background: var(--surface); }
+
+  .stat-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.9rem;
+    font-weight: 700;
+    color: var(--gold-light);
+    line-height: 1;
+  }
+
+  .stat-unit {
+    font-size: 0.7rem;
+    color: var(--gold);
+    letter-spacing: 0.1em;
+    margin-left: 2px;
+  }
+
+  .stat-label {
+    font-size: 0.6rem;
+    letter-spacing: 0.2em;
+    color: var(--silver);
+    text-transform: uppercase;
+    margin-top: 5px;
+  }
+
+  /* ═══════════════════════════════
+     SECTIONS
+  ═══════════════════════════════ */
+  section {
+    padding: 56px 32px;
+    border-bottom: 1px solid rgba(201,168,76,0.08);
+  }
+
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 32px;
+  }
+
+  .section-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 3.5rem;
+    font-weight: 300;
+    color: rgba(201,168,76,0.15);
+    line-height: 1;
+    min-width: 48px;
+  }
+
+  .section-title-block {}
+
+  .section-eyebrow {
+    font-size: 0.6rem;
+    letter-spacing: 0.3em;
+    color: var(--gold);
+    text-transform: uppercase;
+  }
+
+  .section-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(1.4rem, 3vw, 2rem);
+    font-weight: 600;
+    color: var(--white);
+    line-height: 1.2;
+  }
+
+  /* ─── LOCATION GRID ─── */
+  .location-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+  }
+
+  .loc-card {
+    background: var(--surface);
+    border: 1px solid rgba(201,168,76,0.12);
+    border-radius: 4px;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s, border-color 0.3s;
+  }
+
+  .loc-card:hover {
+    transform: translateY(-3px);
+    border-color: rgba(201,168,76,0.4);
+  }
+
+  .loc-card::before {
+    content: '';
+    position: absolute;
+    left: 0; top: 0; bottom: 0;
+    width: 3px;
+    background: linear-gradient(180deg, var(--gold), var(--gold-dark));
+  }
+
+  .loc-icon {
+    font-size: 1.4rem;
+    margin-bottom: 8px;
+  }
+
+  .loc-name {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--white);
+    letter-spacing: 0.05em;
+    margin-bottom: 4px;
+  }
+
+  .loc-dist {
+    font-size: 0.65rem;
+    color: var(--gold);
+    font-weight: 600;
+    letter-spacing: 0.1em;
+  }
+
+  .loc-desc {
+    font-size: 0.62rem;
+    color: var(--silver);
+    margin-top: 4px;
+  }
+
+  /* ─── MARKET PULSE ─── */
+  .market-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 16px;
+    margin-bottom: 28px;
+  }
+
+  .market-kpi {
+    background: var(--surface);
+    border: 1px solid rgba(201,168,76,0.1);
+    border-radius: 4px;
+    padding: 18px;
+    text-align: center;
+    position: relative;
+  }
+
+  .kpi-val {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 4px;
+  }
+
+  .kpi-val.green { color: var(--accent-green); }
+  .kpi-val.gold { color: var(--gold-light); }
+  .kpi-val.teal { color: var(--accent-teal); }
+
+  .kpi-label {
+    font-size: 0.6rem;
+    letter-spacing: 0.15em;
+    color: var(--silver);
+    text-transform: uppercase;
+  }
+
+  .kpi-note {
+    font-size: 0.58rem;
+    color: var(--gold);
+    margin-top: 4px;
+  }
+
+  /* ─── SCENARIO CARDS ─── */
+  .scenario-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+  }
+
+  .scenario-card {
+    background: var(--surface);
+    border-radius: 6px;
+    overflow: hidden;
+    border: 1px solid rgba(201,168,76,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .scenario-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+  }
+
+  .scenario-card.featured {
+    border-color: var(--gold);
+    box-shadow: 0 0 30px rgba(201,168,76,0.15);
+  }
+
+  .sc-header {
+    padding: 18px 22px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-bottom: 1px solid rgba(201,168,76,0.12);
+  }
+
+  .sc-icon { font-size: 1.6rem; }
+
+  .sc-tag {
+    font-size: 0.55rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--silver);
+  }
+
+  .sc-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--white);
+  }
+
+  .sc-badge {
+    margin-left: auto;
+    font-size: 0.58rem;
+    padding: 3px 8px;
+    border-radius: 2px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  .sc-badge.rec { background: var(--gold); color: var(--obsidian); }
+  .sc-badge.alt { background: rgba(13,191,191,0.2); color: var(--accent-teal); border: 1px solid var(--accent-teal); }
+  .sc-badge.opt { background: rgba(76,175,136,0.2); color: var(--accent-green); border: 1px solid var(--accent-green); }
+
+  .sc-body {
+    padding: 18px 22px;
+  }
+
+  .sc-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.04);
+    font-size: 0.72rem;
+  }
+
+  .sc-row:last-child { border-bottom: none; }
+
+  .sc-key { color: var(--silver); }
+
+  .sc-val {
+    font-weight: 600;
+    color: var(--white);
+    text-align: right;
+  }
+
+  .sc-val.highlight { color: var(--gold-light); }
+  .sc-val.green { color: var(--accent-green); }
+  .sc-val.teal { color: var(--accent-teal); }
+
+  /* ─── FINANCIAL MODEL TABLE ─── */
+  .table-scroll {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    border: 1px solid rgba(201,168,76,0.15);
+    border-radius: 6px;
+  }
+
+  .fin-table {
+    width: 100%;
+    min-width: 640px;
+    border-collapse: collapse;
+    font-size: 0.72rem;
+  }
+
+  .fin-table thead tr {
+    background: linear-gradient(90deg, rgba(201,168,76,0.2), rgba(201,168,76,0.08));
+  }
+
+  .fin-table th {
+    padding: 12px 16px;
+    text-align: left;
+    font-size: 0.6rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--gold);
+    font-weight: 700;
+    white-space: nowrap;
+  }
+
+  .fin-table th:not(:first-child) { text-align: right; }
+
+  .fin-table td {
+    padding: 11px 16px;
+    border-bottom: 1px solid rgba(255,255,255,0.04);
+    white-space: nowrap;
+  }
+
+  .fin-table td:not(:first-child) { text-align: right; }
+
+  .fin-table tr:nth-child(even) td { background: rgba(255,255,255,0.02); }
+
+  .fin-table .row-section td {
+    background: rgba(201,168,76,0.06);
+    color: var(--gold-light);
+    font-weight: 700;
+    font-size: 0.68rem;
+    letter-spacing: 0.1em;
+  }
+
+  .fin-table .row-total td {
+    background: rgba(201,168,76,0.12);
+    color: var(--gold-light);
+    font-weight: 800;
+    border-top: 1px solid rgba(201,168,76,0.3);
+  }
+
+  .fin-table .pos { color: var(--accent-green); }
+  .fin-table .neg { color: var(--accent-red); }
+  .fin-table .neutral { color: var(--accent-teal); }
+
+  .td-label { color: var(--silver); font-size: 0.68rem; }
+
+  /* ─── IRR/ROIC VISUAL ─── */
+  .metrics-visual {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 16px;
+    margin: 24px 0;
+  }
+
+  .metric-ring-card {
+    background: var(--surface);
+    border: 1px solid rgba(201,168,76,0.12);
+    border-radius: 8px;
+    padding: 22px 16px;
+    text-align: center;
+  }
+
+  .ring-val {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 1;
+  }
+
+  .ring-label {
+    font-size: 0.58rem;
+    letter-spacing: 0.2em;
+    color: var(--silver);
+    text-transform: uppercase;
+    margin-top: 6px;
+  }
+
+  .ring-sub {
+    font-size: 0.6rem;
+    color: var(--gold);
+    margin-top: 3px;
+  }
+
+  /* ─── PROGRESS BARS ─── */
+  .bar-wrap {
+    margin: 8px 0;
+  }
+
+  .bar-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.65rem;
+    color: var(--silver);
+    margin-bottom: 5px;
+  }
+
+  .bar-bg {
+    height: 6px;
+    background: rgba(255,255,255,0.06);
+    border-radius: 3px;
+    overflow: hidden;
+  }
+
+  .bar-fill {
+    height: 100%;
+    border-radius: 3px;
+    background: linear-gradient(90deg, var(--gold-dark), var(--gold-light));
+    transition: width 1s ease;
+  }
+
+  .bar-fill.teal { background: linear-gradient(90deg, #085F5F, var(--accent-teal)); }
+  .bar-fill.green { background: linear-gradient(90deg, #1A5C3A, var(--accent-green)); }
+
+  /* ─── RISK TABLE ─── */
+  .risk-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 14px;
+  }
+
+  .risk-item {
+    background: var(--surface);
+    border-radius: 4px;
+    padding: 16px;
+    border-left: 3px solid;
+    font-size: 0.72rem;
+  }
+
+  .risk-item.low { border-color: var(--accent-green); }
+  .risk-item.med { border-color: var(--gold); }
+  .risk-item.high { border-color: var(--accent-red); }
+
+  .risk-title {
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 4px;
+    font-size: 0.75rem;
+  }
+
+  .risk-desc { color: var(--silver); font-size: 0.65rem; }
+
+  .risk-badge {
+    display: inline-block;
+    font-size: 0.55rem;
+    padding: 2px 7px;
+    border-radius: 2px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+  }
+
+  .risk-badge.low { background: rgba(76,175,136,0.2); color: var(--accent-green); }
+  .risk-badge.med { background: rgba(201,168,76,0.2); color: var(--gold); }
+  .risk-badge.high { background: rgba(232,85,85,0.2); color: var(--accent-red); }
+
+  /* ─── HIGHLIGHTS BULLETS ─── */
+  .highlights-list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 12px;
+  }
+
+  .highlights-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    background: var(--surface);
+    padding: 14px 16px;
+    border-radius: 4px;
+    border: 1px solid rgba(201,168,76,0.08);
+    font-size: 0.72rem;
+    color: var(--silver);
+    transition: border-color 0.3s;
+  }
+
+  .highlights-list li:hover { border-color: rgba(201,168,76,0.3); }
+
+  .highlights-list .bullet-icon {
+    flex-shrink: 0;
+    width: 22px; height: 22px;
+    background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    margin-top: 1px;
+  }
+
+  .highlights-list strong { color: var(--white); display: block; margin-bottom: 2px; }
+
+  /* ─── VERDICT BOX ─── */
+  .verdict-box {
+    background: linear-gradient(135deg, rgba(201,168,76,0.1), rgba(201,168,76,0.04));
+    border: 1px solid var(--gold);
+    border-radius: 8px;
+    padding: 32px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .verdict-box::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, var(--gold-light), transparent);
+  }
+
+  .verdict-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(1.5rem, 3vw, 2.2rem);
+    font-weight: 700;
+    color: var(--gold-light);
+    margin-bottom: 12px;
+  }
+
+  .verdict-text {
+    font-size: 0.78rem;
+    color: var(--silver);
+    max-width: 680px;
+    margin: 0 auto;
+    line-height: 1.8;
+  }
+
+  /* ─── CONTACT FOOTER ─── */
+  .contact-footer {
+    background: var(--deep);
+    border-top: 1px solid rgba(201,168,76,0.2);
+    padding: 40px 32px;
+  }
+
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 32px;
+    align-items: center;
+  }
+
+  .contact-info h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.5rem;
+    color: var(--white);
+    margin-bottom: 6px;
+  }
+
+  .contact-info p {
+    font-size: 0.72rem;
+    color: var(--silver);
+    margin: 3px 0;
+    letter-spacing: 0.05em;
+  }
+
+  .contact-info a {
+    color: var(--gold);
+    text-decoration: none;
+  }
+
+  .contact-cta {
+    background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+    color: var(--obsidian);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 800;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    border: none;
+    padding: 14px 28px;
+    cursor: pointer;
+    border-radius: 2px;
+    white-space: nowrap;
+  }
+
+  /* ─── DISCLAIMER ─── */
+  .disclaimer {
+    padding: 20px 32px;
+    font-size: 0.58rem;
+    color: rgba(168,168,184,0.5);
+    text-align: center;
+    line-height: 1.6;
+  }
+
+  /* ─── NEWS TICKER ─── */
+  .news-ticker {
+    background: rgba(201,168,76,0.08);
+    border-top: 1px solid rgba(201,168,76,0.15);
+    border-bottom: 1px solid rgba(201,168,76,0.15);
+    padding: 8px 0;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  .ticker-inner {
+    display: inline-block;
+    animation: ticker 32s linear infinite;
+    font-size: 0.65rem;
+    letter-spacing: 0.1em;
+    color: var(--gold);
+  }
+
+  .ticker-inner span { margin: 0 32px; color: var(--silver); }
+  .ticker-inner strong { color: var(--gold); }
+
+  @keyframes ticker {
+    0% { transform: translateX(100vw); }
+    100% { transform: translateX(-100%); }
+  }
+
+  /* ─── INLINE CHART (CSS bars) ─── */
+  .chart-section {
+    margin-top: 24px;
+  }
+
+  .chart-title {
+    font-size: 0.62rem;
+    letter-spacing: 0.2em;
+    color: var(--gold);
+    text-transform: uppercase;
+    margin-bottom: 14px;
+  }
+
+  .bar-chart {
+    display: flex;
+    align-items: flex-end;
+    gap: 8px;
+    height: 90px;
+  }
+
+  .bc-col {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    justify-content: flex-end;
+  }
+
+  .bc-bar {
+    width: 100%;
+    background: linear-gradient(180deg, var(--gold-light), var(--gold-dark));
+    border-radius: 2px 2px 0 0;
+    position: relative;
+    min-height: 4px;
+  }
+
+  .bc-bar.accent { background: linear-gradient(180deg, var(--accent-teal), #056060); }
+
+  .bc-val {
+    font-size: 0.58rem;
+    color: var(--gold);
+    margin-bottom: 3px;
+    font-weight: 700;
+  }
+
+  .bc-label {
+    font-size: 0.55rem;
+    color: var(--silver);
+    margin-top: 5px;
+    text-align: center;
+  }
+
+  .chart-x-line {
+    height: 1px;
+    background: rgba(255,255,255,0.08);
+    margin-top: 0;
+  }
+
+  /* ─── RESPONSIVE ─── */
+  @media (max-width: 768px) {
+    .hero-content {
+      grid-template-columns: 1fr;
+      padding: 32px 20px 0;
+    }
+
+    .hero-price-box { min-width: unset; }
+
+    .stats-strip {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    section { padding: 36px 20px; }
+
+    .topbar { padding: 16px 20px; }
+
+    .contact-grid {
+      grid-template-columns: 1fr;
+      text-align: center;
+    }
+
+    .scenario-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .fin-table { font-size: 0.68rem; }
+  }
+
+  @media (max-width: 480px) {
+    .stats-strip {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .brand-name { font-size: 0.9rem; letter-spacing: 0.15em; }
+
+    .market-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+
+  /* ─── SEPARATOR ORNAMENT ─── */
+  .ornament {
+    text-align: center;
+    color: rgba(201,168,76,0.4);
+    font-size: 1rem;
+    letter-spacing: 0.5em;
+    margin: 8px 0;
+  }
+
+  /* ─── TWO COL LAYOUT ─── */
+  .two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+
+  @media (max-width: 640px) {
+    .two-col { grid-template-columns: 1fr; }
+  }
+
+  /* Pill tag */
+  .pill {
+    display: inline-block;
+    font-size: 0.58rem;
+    padding: 3px 10px;
+    border-radius: 99px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    background: rgba(201,168,76,0.12);
+    color: var(--gold);
+    border: 1px solid rgba(201,168,76,0.25);
+    margin-right: 4px;
+    margin-bottom: 4px;
+  }
+
+  .divider-line {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 28px 0 18px;
+  }
+
+  .divider-line::before,
+  .divider-line::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: rgba(201,168,76,0.15);
+  }
+
+  .divider-label {
+    font-size: 0.58rem;
+    letter-spacing: 0.3em;
+    color: rgba(201,168,76,0.5);
+    text-transform: uppercase;
+  }
+
+</style>
+</head>
+<body>
+
+<!-- NEWS TICKER -->
+<div class="news-ticker">
+  <div class="ticker-inner">
+    <strong>LIVE MARKET DATA 2026</strong>
+    <span>Phuket villa prices up <strong>+12% YoY</strong> in 2026 · Knight Frank Thailand</span>
+    <span>Patong hotel occupancy <strong>79.5% H1 2025</strong>, January peak at <strong>91.8%</strong></span>
+    <span>Luxury ADR rose <strong>+3.9% YoY</strong> to THB 7,005 — Cushman &amp; Wakefield</span>
+    <span>Phuket airport processed <strong>19.7M passengers</strong> in 2024 — second airport in planning</span>
+    <span>Phuket projected <strong>84% occupancy</strong> in 2026 — JLL Asia Pacific</span>
+    <span>Land values projected <strong>+6–10% p.a.</strong> through 2030 — Investment Property Phuket</span>
+    <strong>PRIME CBD LAND — PATONG BEACH — 2 RAI — THB 900 MILLION</strong>
+    <span>Phuket hotel pipeline: <strong>41 projects</strong> 2026–2030, supply to surpass <strong>100,000 keys</strong></span>
+  </div>
+</div>
+
+<!-- ═══════ HERO ═══════ -->
+<header class="hero">
+  <div class="topbar">
+    <div class="brand-logo">
+      <div class="brand-diamond"></div>
+      <div class="brand-name">Joe Collection</div>
+    </div>
+    <div class="topbar-right">
+      <span>Investment Prospectus</span>
+      Patong Beach · Phuket · Thailand<br>
+      Confidential — May 2026
+    </div>
+  </div>
+
+  <div class="wrapper">
+    <div class="hero-content">
+      <div>
+        <div class="hero-label">Prime Commercial Land — CBD Patong</div>
+        <h1 class="hero-title">
+          Land 2 Rai<br>
+          <em>Patong Beach</em><br>
+          Phuket
+        </h1>
+        <p class="hero-subtitle">3,200 Sq.m · Freehold · Nor Sor 3 Kor · Commercial Zone</p>
+        <div style="margin-top:18px;">
+          <span class="pill">Freehold</span>
+          <span class="pill">Commercial Zone</span>
+          <span class="pill">68m Road Frontage</span>
+          <span class="pill">Mixed-Use Ready</span>
+          <span class="pill">60m Height Potential</span>
+        </div>
+      </div>
+      <div class="hero-price-box">
+        <div class="price-label">Asking Price</div>
+        <div class="price-value">฿900M</div>
+        <div class="price-unit">Thai Baht</div>
+        <div class="price-psm">
+          ฿281,250 / sq.m<br>
+          <span style="color:var(--gold-light);">≈ USD 24.7M</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="stats-strip">
+    <div class="stat-cell">
+      <div class="stat-num">2<span class="stat-unit">Rai</span></div>
+      <div class="stat-label">Land Size</div>
+    </div>
+    <div class="stat-cell">
+      <div class="stat-num">3,200<span class="stat-unit">m²</span></div>
+      <div class="stat-label">Total Area</div>
+    </div>
+    <div class="stat-cell">
+      <div class="stat-num">68<span class="stat-unit">m</span></div>
+      <div class="stat-label">Road Frontage</div>
+    </div>
+    <div class="stat-cell">
+      <div class="stat-num">60<span class="stat-unit">m</span></div>
+      <div class="stat-label">Max Height (Proposed)</div>
+    </div>
+  </div>
+</header>
+
+<!-- ═══════ SECTION 1 — LOCATION ═══════ -->
+<section>
+  <div class="wrapper">
+    <div class="section-header">
+      <div class="section-num">01</div>
+      <div class="section-title-block">
+        <div class="section-eyebrow">Strategic Positioning</div>
+        <div class="section-title">Location & Connectivity Intelligence</div>
+      </div>
+    </div>
+
+    <p style="font-size:0.78rem;color:var(--silver);margin-bottom:24px;max-width:760px;line-height:1.8;">
+      Situated on <strong style="color:var(--white);">Phra Metta Road (Sai 3 Kor)</strong> in the absolute core of Patong CBD, this 2-Rai plot delivers unrivalled exposure to Phuket's highest-volume tourist corridor. With 68 metres of uninterrupted prime frontage, the site commands one of the last available large-format development footprints in a fully urbanised, high-footfall zone.
+    </p>
+
+    <div class="location-grid">
+      <div class="loc-card">
+        <div class="loc-icon">🏖️</div>
+        <div class="loc-name">Patong Beach</div>
+        <div class="loc-dist">~300m · 4 min walk</div>
+        <div class="loc-desc">Southeast Asia's most visited beach resort; 8.8M+ annual passenger arrivals</div>
+      </div>
+      <div class="loc-card">
+        <div class="loc-icon">🛍️</div>
+        <div class="loc-name">Jungceylon Mall</div>
+        <div class="loc-dist">~200m · Adjacent</div>
+        <div class="loc-desc">250,000 m² flagship regional shopping centre; anchor tenant gravity</div>
+      </div>
+      <div class="loc-card">
+        <div class="loc-icon">🌃</div>
+        <div class="loc-name">Bangla Road</div>
+        <div class="loc-dist">~400m · Walking</div>
+        <div class="loc-desc">Patong's premier nightlife & entertainment spine; 24/7 foot traffic engine</div>
+      </div>
+      <div class="loc-card">
+        <div class="loc-icon">🥊</div>
+        <div class="loc-name">Patong Boxing Stadium</div>
+        <div class="loc-dist">~500m</div>
+        <div class="loc-desc">International Muay Thai venue; year-round tourist draw</div>
+      </div>
+      <div class="loc-card">
+        <div class="loc-icon">🎭</div>
+        <div class="loc-name">Simon Cabaret</div>
+        <div class="loc-dist">~600m</div>
+        <div class="loc-desc">Iconic performing arts venue; nightly sellout attendance</div>
+      </div>
+      <div class="loc-card">
+        <div class="loc-icon">🛣️</div>
+        <div class="loc-name">Kathu–Patong Expressway</div>
+        <div class="loc-dist">~1.2km · New</div>
+        <div class="loc-desc">Direct airport link; dramatically reduces transit time island-wide</div>
+      </div>
+      <div class="loc-card">
+        <div class="loc-icon">✈️</div>
+        <div class="loc-name">Phuket Int'l Airport</div>
+        <div class="loc-dist">~30 min drive</div>
+        <div class="loc-desc">19.7M passengers (2024); second airport planned for +12.5M capacity</div>
+      </div>
+      <div class="loc-card">
+        <div class="loc-icon">🏞️</div>
+        <div class="loc-name">Large Public Park</div>
+        <div class="loc-dist">Adjacent West</div>
+        <div class="loc-desc">Rare green lung buffer; enhances project amenity & view premiums</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ SECTION 2 — MARKET INTELLIGENCE ═══════ -->
+<section>
+  <div class="wrapper">
+    <div class="section-header">
+      <div class="section-num">02</div>
+      <div class="section-title-block">
+        <div class="section-eyebrow">Live Market Intelligence — 2025/2026</div>
+        <div class="section-title">Phuket Macro & Hospitality Fundamentals</div>
+      </div>
+    </div>
+
+    <div class="market-grid">
+      <div class="market-kpi">
+        <div class="kpi-val gold">79.5%</div>
+        <div class="kpi-label">Hotel Occupancy</div>
+        <div class="kpi-note">H1 2025 · Peak Jan 91.8%</div>
+      </div>
+      <div class="market-kpi">
+        <div class="kpi-val teal">THB 7,005</div>
+        <div class="kpi-label">Luxury ADR</div>
+        <div class="kpi-note">+3.9% YoY · Cushman & Wakefield</div>
+      </div>
+      <div class="market-kpi">
+        <div class="kpi-val green">+12%</div>
+        <div class="kpi-label">Villa Price Growth</div>
+        <div class="kpi-note">2026 YoY · Knight Frank</div>
+      </div>
+      <div class="market-kpi">
+        <div class="kpi-val gold">8.8M</div>
+        <div class="kpi-label">Passenger Arrivals</div>
+        <div class="kpi-note">Phuket Airport 2025</div>
+      </div>
+      <div class="market-kpi">
+        <div class="kpi-val teal">8.4%</div>
+        <div class="kpi-label">Net Rental Yield</div>
+        <div class="kpi-note">Prime Phuket locations 2026</div>
+      </div>
+      <div class="market-kpi">
+        <div class="kpi-val green">84%</div>
+        <div class="kpi-label">Occ. Forecast 2026</div>
+        <div class="kpi-note">Southern Phuket · JLL</div>
+      </div>
+      <div class="market-kpi">
+        <div class="kpi-val gold">THB 5,324</div>
+        <div class="kpi-label">RevPAR</div>
+        <div class="kpi-note">+6.9% YoY · 2H 2025</div>
+      </div>
+      <div class="market-kpi">
+        <div class="kpi-val green">+10%</div>
+        <div class="kpi-label">Land Appreciation</div>
+        <div class="kpi-note">Projected p.a. through 2030</div>
+      </div>
+    </div>
+
+    <!-- Mini bar chart – occupancy trend -->
+    <div class="two-col">
+      <div>
+        <div class="chart-title">Phuket Luxury Hotel Occupancy Trend (%)</div>
+        <div class="bar-chart">
+          <div class="bc-col">
+            <div class="bc-val">58</div>
+            <div class="bc-bar" style="height:52%;"></div>
+            <div class="bc-label">2021</div>
+          </div>
+          <div class="bc-col">
+            <div class="bc-val">65</div>
+            <div class="bc-bar" style="height:59%;"></div>
+            <div class="bc-label">2022</div>
+          </div>
+          <div class="bc-col">
+            <div class="bc-val">73</div>
+            <div class="bc-bar" style="height:67%;"></div>
+            <div class="bc-label">2023</div>
+          </div>
+          <div class="bc-col">
+            <div class="bc-val">76.8</div>
+            <div class="bc-bar" style="height:73%;"></div>
+            <div class="bc-label">2024</div>
+          </div>
+          <div class="bc-col">
+            <div class="bc-val">79.5</div>
+            <div class="bc-bar" style="height:78%;"></div>
+            <div class="bc-label">H1'25</div>
+          </div>
+          <div class="bc-col">
+            <div class="bc-val">84</div>
+            <div class="bc-bar accent" style="height:88%;"></div>
+            <div class="bc-label">2026F</div>
+          </div>
+        </div>
+        <div class="chart-x-line"></div>
+      </div>
+
+      <div>
+        <div class="chart-title">Land Value Appreciation Index (Base 2021 = 100)</div>
+        <div class="bar-chart">
+          <div class="bc-col">
+            <div class="bc-val">100</div>
+            <div class="bc-bar" style="height:28%;"></div>
+            <div class="bc-label">2021</div>
+          </div>
+          <div class="bc-col">
+            <div class="bc-val">112</div>
+            <div class="bc-bar" style="height:36%;"></div>
+            <div class="bc-label">2022</div>
+          </div>
+          <div class="bc-col">
+            <div class="bc-val">128</div>
+            <div class="bc-bar" style="height:48%;"></div>
+            <div class="bc-label">2023</div>
+          </div>
+          <div class="bc-col">
+            <div class="bc-val">148</div>
+            <div class="bc-bar" style="height:62%;"></div>
+            <div class="bc-label">2024</div>
+          </div>
+          <div class="bc-col">
+            <div class="bc-val">168</div>
+            <div class="bc-bar" style="height:76%;"></div>
+            <div class="bc-label">2025</div>
+          </div>
+          <div class="bc-col">
+            <div class="bc-val">185+</div>
+            <div class="bc-bar accent" style="height:90%;"></div>
+            <div class="bc-label">2026F</div>
+          </div>
+        </div>
+        <div class="chart-x-line"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ SECTION 3 — DEVELOPMENT SCENARIOS ═══════ -->
+<section>
+  <div class="wrapper">
+    <div class="section-header">
+      <div class="section-num">03</div>
+      <div class="section-title-block">
+        <div class="section-eyebrow">Highest & Best Use Analysis</div>
+        <div class="section-title">Development Scenario Matrix</div>
+      </div>
+    </div>
+
+    <p style="font-size:0.75rem;color:var(--silver);margin-bottom:24px;line-height:1.8;">Three development scenarios have been modelled under current Commercial Zone regulations, with an enhanced upside scenario premised on the proposed city planning legislation increasing maximum permissible building height to 60 metres.</p>
+
+    <div class="scenario-grid">
+      <!-- Scenario A -->
+      <div class="scenario-card featured">
+        <div class="sc-header" style="background:linear-gradient(90deg,rgba(201,168,76,0.15),transparent);">
+          <div class="sc-icon">🏨</div>
+          <div>
+            <div class="sc-tag">Scenario A · Recommended</div>
+            <div class="sc-name">Boutique Luxury Hotel</div>
+          </div>
+          <div class="sc-badge rec">Top Pick</div>
+        </div>
+        <div class="sc-body">
+          <div class="sc-row"><span class="sc-key">Development Type</span><span class="sc-val">5-Star Boutique Hotel</span></div>
+          <div class="sc-row"><span class="sc-key">Keys / Rooms</span><span class="sc-val highlight">120–150 keys</span></div>
+          <div class="sc-row"><span class="sc-key">GFA (with 60m zoning)</span><span class="sc-val">~22,000 m²</span></div>
+          <div class="sc-row"><span class="sc-key">Build Cost Est.</span><span class="sc-val">฿1,200–1,400M</span></div>
+          <div class="sc-row"><span class="sc-key">Total Investment</span><span class="sc-val highlight">฿2,100–2,300M</span></div>
+          <div class="sc-row"><span class="sc-key">Stabilised Revenue (Yr3)</span><span class="sc-val green">฿350–420M p.a.</span></div>
+          <div class="sc-row"><span class="sc-key">NOI (stabilised)</span><span class="sc-val green">฿175–210M p.a.</span></div>
+          <div class="sc-row"><span class="sc-key">IRR (10-yr)</span><span class="sc-val green">18–22%</span></div>
+          <div class="sc-row"><span class="sc-key">ROIC</span><span class="sc-val green">9–11%</span></div>
+          <div class="sc-row"><span class="sc-key">NPV (10-yr, 12% disc.)</span><span class="sc-val highlight">฿680–820M</span></div>
+          <div class="sc-row"><span class="sc-key">Payback Period</span><span class="sc-val">8–10 Years</span></div>
+          <div class="sc-row"><span class="sc-key">Exit Yield</span><span class="sc-val">6.5–7.5%</span></div>
+          <div class="sc-row"><span class="sc-key">NPM (Yr3+)</span><span class="sc-val green">~50%</span></div>
+        </div>
+      </div>
+
+      <!-- Scenario B -->
+      <div class="scenario-card">
+        <div class="sc-header">
+          <div class="sc-icon">🏙️</div>
+          <div>
+            <div class="sc-tag">Scenario B · High Return</div>
+            <div class="sc-name">Luxury Condo + Retail</div>
+          </div>
+          <div class="sc-badge alt">Alt.</div>
+        </div>
+        <div class="sc-body">
+          <div class="sc-row"><span class="sc-key">Development Type</span><span class="sc-val">Mixed-Use Condo</span></div>
+          <div class="sc-row"><span class="sc-key">Units</span><span class="sc-val highlight">200–240 units</span></div>
+          <div class="sc-row"><span class="sc-key">Retail Podium</span><span class="sc-val">~2,500 m² GLA</span></div>
+          <div class="sc-row"><span class="sc-key">Build Cost Est.</span><span class="sc-val">฿1,400–1,600M</span></div>
+          <div class="sc-row"><span class="sc-key">Total Investment</span><span class="sc-val highlight">฿2,300–2,500M</span></div>
+          <div class="sc-row"><span class="sc-key">Sales Revenue (Yr1–4)</span><span class="sc-val teal">฿3,500–4,200M</span></div>
+          <div class="sc-row"><span class="sc-key">Gross Dev. Profit</span><span class="sc-val teal">฿1,200–1,700M</span></div>
+          <div class="sc-row"><span class="sc-key">IRR (Development)</span><span class="sc-val teal">24–30%</span></div>
+          <div class="sc-row"><span class="sc-key">ROIC</span><span class="sc-val teal">52–68%</span></div>
+          <div class="sc-row"><span class="sc-key">NPV</span><span class="sc-val highlight">฿850–1,200M</span></div>
+          <div class="sc-row"><span class="sc-key">Payback Period</span><span class="sc-val">4–5 Years</span></div>
+          <div class="sc-row"><span class="sc-key">Avg. Sell Price / m²</span><span class="sc-val teal">฿180–220K</span></div>
+          <div class="sc-row"><span class="sc-key">NPM</span><span class="sc-val teal">34–40%</span></div>
+        </div>
+      </div>
+
+      <!-- Scenario C -->
+      <div class="scenario-card">
+        <div class="sc-header">
+          <div class="sc-icon">🎪</div>
+          <div>
+            <div class="sc-tag">Scenario C · Defensive</div>
+            <div class="sc-name">Entertainment Complex</div>
+          </div>
+          <div class="sc-badge opt">Opt.</div>
+        </div>
+        <div class="sc-body">
+          <div class="sc-row"><span class="sc-key">Development Type</span><span class="sc-val">F&B / Lifestyle / Retail</span></div>
+          <div class="sc-row"><span class="sc-key">GLA</span><span class="sc-val highlight">~8,000 m²</span></div>
+          <div class="sc-row"><span class="sc-key">Floors</span><span class="sc-val">5–6 podium floors</span></div>
+          <div class="sc-row"><span class="sc-key">Build Cost Est.</span><span class="sc-val">฿600–750M</span></div>
+          <div class="sc-row"><span class="sc-key">Total Investment</span><span class="sc-val highlight">฿1,500–1,650M</span></div>
+          <div class="sc-row"><span class="sc-key">Rental Revenue (Yr2+)</span><span class="sc-val green">฿120–160M p.a.</span></div>
+          <div class="sc-row"><span class="sc-key">NOI</span><span class="sc-val green">฿72–96M p.a.</span></div>
+          <div class="sc-row"><span class="sc-key">IRR (10-yr)</span><span class="sc-val green">12–16%</span></div>
+          <div class="sc-row"><span class="sc-key">ROIC</span><span class="sc-val green">4.8–6.2%</span></div>
+          <div class="sc-row"><span class="sc-key">NPV (10-yr)</span><span class="sc-val highlight">฿280–420M</span></div>
+          <div class="sc-row"><span class="sc-key">Payback Period</span><span class="sc-val">10–14 Years</span></div>
+          <div class="sc-row"><span class="sc-key">Capital at Risk</span><span class="sc-val green">Lowest</span></div>
+          <div class="sc-row"><span class="sc-key">NPM</span><span class="sc-val green">~60%</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ SECTION 4 — FINANCIAL MODEL ═══════ -->
+<section>
+  <div class="wrapper">
+    <div class="section-header">
+      <div class="section-num">04</div>
+      <div class="section-title-block">
+        <div class="section-eyebrow">CFO Financial Model — Scenario A (Recommended)</div>
+        <div class="section-title">Boutique Hotel · 10-Year Projection</div>
+      </div>
+    </div>
+
+    <!-- Key Metrics Visual -->
+    <div class="metrics-visual">
+      <div class="metric-ring-card">
+        <div class="ring-val" style="color:var(--accent-green);">18–22%</div>
+        <div class="ring-label">IRR</div>
+        <div class="ring-sub">10-Year Horizon</div>
+      </div>
+      <div class="metric-ring-card">
+        <div class="ring-val" style="color:var(--gold-light);">9–11%</div>
+        <div class="ring-label">ROIC</div>
+        <div class="ring-sub">Stabilised Return</div>
+      </div>
+      <div class="metric-ring-card">
+        <div class="ring-val" style="color:var(--accent-teal);">~50%</div>
+        <div class="ring-label">NPM</div>
+        <div class="ring-sub">Net Profit Margin Yr3+</div>
+      </div>
+      <div class="metric-ring-card">
+        <div class="ring-val" style="color:var(--accent-green);">฿820M</div>
+        <div class="ring-label">NPV</div>
+        <div class="ring-sub">At 12% Discount Rate</div>
+      </div>
+      <div class="metric-ring-card">
+        <div class="ring-val" style="color:var(--gold-light);">8–10yr</div>
+        <div class="ring-label">Payback</div>
+        <div class="ring-sub">Full Capital Recovery</div>
+      </div>
+      <div class="metric-ring-card">
+        <div class="ring-val" style="color:var(--accent-teal);">7%</div>
+        <div class="ring-label">Cap Rate Exit</div>
+        <div class="ring-sub">Conservative Terminal</div>
+      </div>
+    </div>
+
+    <div class="divider-line"><span class="divider-label">Detailed Revenue & Cost Projection</span></div>
+
+    <!-- Financial Table -->
+    <div class="table-scroll">
+      <table class="fin-table">
+        <thead>
+          <tr>
+            <th>Line Item</th>
+            <th>Year 1</th>
+            <th>Year 2</th>
+            <th>Year 3</th>
+            <th>Year 5</th>
+            <th>Year 7</th>
+            <th>Year 10</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="row-section"><td colspan="7">REVENUE (THB Million)</td></tr>
+          <tr>
+            <td class="td-label">Room Revenue (120 keys)</td>
+            <td>฿88M</td>
+            <td>฿158M</td>
+            <td>฿210M</td>
+            <td>฿245M</td>
+            <td>฿275M</td>
+            <td>฿310M</td>
+          </tr>
+          <tr>
+            <td class="td-label">F&B / Outlets</td>
+            <td>฿22M</td>
+            <td>฿42M</td>
+            <td>฿65M</td>
+            <td>฿78M</td>
+            <td>฿88M</td>
+            <td>฿100M</td>
+          </tr>
+          <tr>
+            <td class="td-label">Spa / Activities</td>
+            <td>฿8M</td>
+            <td>฿18M</td>
+            <td>฿28M</td>
+            <td>฿35M</td>
+            <td>฿42M</td>
+            <td>฿50M</td>
+          </tr>
+          <tr class="row-total">
+            <td>TOTAL REVENUE</td>
+            <td class="pos">฿118M</td>
+            <td class="pos">฿218M</td>
+            <td class="pos">฿303M</td>
+            <td class="pos">฿358M</td>
+            <td class="pos">฿405M</td>
+            <td class="pos">฿460M</td>
+          </tr>
+          <tr class="row-section"><td colspan="7">OPERATING COSTS</td></tr>
+          <tr>
+            <td class="td-label">Payroll & Benefits</td>
+            <td class="neg">-฿36M</td>
+            <td class="neg">-฿60M</td>
+            <td class="neg">-฿76M</td>
+            <td class="neg">-฿86M</td>
+            <td class="neg">-฿94M</td>
+            <td class="neg">-฿105M</td>
+          </tr>
+          <tr>
+            <td class="td-label">Utilities & Maintenance</td>
+            <td class="neg">-฿14M</td>
+            <td class="neg">-฿24M</td>
+            <td class="neg">-฿30M</td>
+            <td class="neg">-฿34M</td>
+            <td class="neg">-฿38M</td>
+            <td class="neg">-฿43M</td>
+          </tr>
+          <tr>
+            <td class="td-label">Sales, Marketing & OTA</td>
+            <td class="neg">-฿12M</td>
+            <td class="neg">-฿22M</td>
+            <td class="neg">-฿28M</td>
+            <td class="neg">-฿32M</td>
+            <td class="neg">-฿35M</td>
+            <td class="neg">-฿40M</td>
+          </tr>
+          <tr>
+            <td class="td-label">Admin, Insurance, Misc.</td>
+            <td class="neg">-฿8M</td>
+            <td class="neg">-฿14M</td>
+            <td class="neg">-฿18M</td>
+            <td class="neg">-฿20M</td>
+            <td class="neg">-฿23M</td>
+            <td class="neg">-฿26M</td>
+          </tr>
+          <tr class="row-total">
+            <td>TOTAL OPEX</td>
+            <td class="neg">-฿70M</td>
+            <td class="neg">-฿120M</td>
+            <td class="neg">-฿152M</td>
+            <td class="neg">-฿172M</td>
+            <td class="neg">-฿190M</td>
+            <td class="neg">-฿214M</td>
+          </tr>
+          <tr class="row-section"><td colspan="7">PROFITABILITY</td></tr>
+          <tr>
+            <td class="td-label">EBITDA</td>
+            <td class="pos">฿48M</td>
+            <td class="pos">฿98M</td>
+            <td class="pos">฿151M</td>
+            <td class="pos">฿186M</td>
+            <td class="pos">฿215M</td>
+            <td class="pos">฿246M</td>
+          </tr>
+          <tr>
+            <td class="td-label">EBITDA Margin</td>
+            <td class="neutral">40.7%</td>
+            <td class="neutral">44.9%</td>
+            <td class="neutral">49.8%</td>
+            <td class="neutral">51.9%</td>
+            <td class="neutral">53.1%</td>
+            <td class="neutral">53.5%</td>
+          </tr>
+          <tr>
+            <td class="td-label">Depreciation & CapEx Reserve</td>
+            <td class="neg">-฿22M</td>
+            <td class="neg">-฿22M</td>
+            <td class="neg">-฿22M</td>
+            <td class="neg">-฿22M</td>
+            <td class="neg">-฿22M</td>
+            <td class="neg">-฿22M</td>
+          </tr>
+          <tr>
+            <td class="td-label">Interest (assumed leverage 40%)</td>
+            <td class="neg">-฿42M</td>
+            <td class="neg">-฿40M</td>
+            <td class="neg">-฿38M</td>
+            <td class="neg">-฿32M</td>
+            <td class="neg">-฿24M</td>
+            <td class="neg">-฿12M</td>
+          </tr>
+          <tr class="row-total">
+            <td>NET PROFIT AFTER TAX (est.)</td>
+            <td class="neg">-฿16M</td>
+            <td class="pos">฿27M</td>
+            <td class="pos">฿68M</td>
+            <td class="pos">฿99M</td>
+            <td class="pos">฿126M</td>
+            <td class="pos">฿158M</td>
+          </tr>
+          <tr>
+            <td class="td-label">Net Profit Margin</td>
+            <td class="neg">—</td>
+            <td class="neutral">12.4%</td>
+            <td class="neutral">22.4%</td>
+            <td class="neutral">27.7%</td>
+            <td class="neutral">31.1%</td>
+            <td class="neutral">34.3%</td>
+          </tr>
+          <tr class="row-section"><td colspan="7">KEY OPERATING METRICS</td></tr>
+          <tr>
+            <td class="td-label">Assumed Occupancy</td>
+            <td>52%</td>
+            <td>68%</td>
+            <td>76%</td>
+            <td>80%</td>
+            <td>82%</td>
+            <td>84%</td>
+          </tr>
+          <tr>
+            <td class="td-label">ADR (THB / night)</td>
+            <td>฿3,800</td>
+            <td>฿5,200</td>
+            <td>฿6,500</td>
+            <td>฿7,200</td>
+            <td>฿7,800</td>
+            <td>฿8,600</td>
+          </tr>
+          <tr>
+            <td class="td-label">RevPAR (THB / night)</td>
+            <td>฿1,976</td>
+            <td>฿3,536</td>
+            <td>฿4,940</td>
+            <td>฿5,760</td>
+            <td>฿6,396</td>
+            <td>฿7,224</td>
+          </tr>
+          <tr class="row-total">
+            <td>CUMULATIVE FREE CASH FLOW</td>
+            <td class="neg">-฿2,108M</td>
+            <td class="neg">-฿2,018M</td>
+            <td class="neg">-฿1,854M</td>
+            <td class="neg">-฿1,494M</td>
+            <td class="neg">-฿904M</td>
+            <td class="pos">฿+142M</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p style="font-size:0.6rem;color:rgba(168,168,184,0.5);margin-top:10px;">* Projections based on market data from Cushman &amp; Wakefield, Knight Frank Thailand, C9 Hotelworks 2026 reports. All figures indicative; independent feasibility study recommended.</p>
+
+    <div class="divider-line"><span class="divider-label">Return Benchmarking</span></div>
+
+    <div class="two-col">
+      <div>
+        <div class="chart-title">IRR Comparison — Asset Classes (10-yr, % p.a.)</div>
+        <div class="bar-wrap">
+          <div class="bar-header"><span>This Site — Luxury Hotel</span><span style="color:var(--accent-green)">20%+</span></div>
+          <div class="bar-bg"><div class="bar-fill green" style="width:85%"></div></div>
+        </div>
+        <div class="bar-wrap">
+          <div class="bar-header"><span>Condo Dev (Scenario B)</span><span style="color:var(--accent-teal)">27%</span></div>
+          <div class="bar-bg"><div class="bar-fill teal" style="width:95%"></div></div>
+        </div>
+        <div class="bar-wrap">
+          <div class="bar-header"><span>Retail Complex</span><span style="color:var(--gold)">14%</span></div>
+          <div class="bar-bg"><div class="bar-fill" style="width:52%"></div></div>
+        </div>
+        <div class="bar-wrap">
+          <div class="bar-header"><span>Thai Gov. Bonds</span><span style="color:var(--silver)">3.2%</span></div>
+          <div class="bar-bg"><div class="bar-fill" style="width:10%;background:rgba(168,168,184,0.3)"></div></div>
+        </div>
+        <div class="bar-wrap">
+          <div class="bar-header"><span>SET Index (avg 5yr)</span><span style="color:var(--silver)">7.5%</span></div>
+          <div class="bar-bg"><div class="bar-fill" style="width:24%;background:rgba(168,168,184,0.3)"></div></div>
+        </div>
+      </div>
+
+      <div>
+        <div class="chart-title">Land Value Upside Scenarios (THB / sq.m)</div>
+        <div class="bar-wrap">
+          <div class="bar-header"><span>Current Ask</span><span style="color:var(--gold)">฿281K</span></div>
+          <div class="bar-bg"><div class="bar-fill" style="width:44%"></div></div>
+        </div>
+        <div class="bar-wrap">
+          <div class="bar-header"><span>2028E (conservative)</span><span style="color:var(--gold)">฿340K</span></div>
+          <div class="bar-bg"><div class="bar-fill" style="width:55%"></div></div>
+        </div>
+        <div class="bar-wrap">
+          <div class="bar-header"><span>2030E (base)</span><span style="color:var(--accent-teal)">฿420K</span></div>
+          <div class="bar-bg"><div class="bar-fill teal" style="width:68%"></div></div>
+        </div>
+        <div class="bar-wrap">
+          <div class="bar-header"><span>2030E (new zoning)</span><span style="color:var(--accent-green)">฿550K+</span></div>
+          <div class="bar-bg"><div class="bar-fill green" style="width:88%"></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ SECTION 5 — KEY HIGHLIGHTS ═══════ -->
+<section>
+  <div class="wrapper">
+    <div class="section-header">
+      <div class="section-num">05</div>
+      <div class="section-title-block">
+        <div class="section-eyebrow">Investment Thesis</div>
+        <div class="section-title">Why This Site, Why Now</div>
+      </div>
+    </div>
+
+    <ul class="highlights-list">
+      <li>
+        <div class="bullet-icon"></div>
+        <div><strong>Last-Mover Scarcity Premium</strong>One of the final available 2+ Rai CBD plots in Patong. No equivalent site has come to market in 5+ years. Irreplaceable land bank position.</div>
+      </li>
+      <li>
+        <div class="bullet-icon"></div>
+        <div><strong>60m Height Zoning Catalyst</strong>Proposed legislation would unlock ~22,000 m² GFA — transforming economics and asset class potential from low-rise to landmark high-rise development.</div>
+      </li>
+      <li>
+        <div class="bullet-icon"></div>
+        <div><strong>Dual Expressway Access</strong>New Kathu–Patong expressway directly connects the site to the airport and interior Phuket, slashing travel time and expanding the addressable catchment dramatically.</div>
+      </li>
+      <li>
+        <div class="bullet-icon"></div>
+        <div><strong>Proven RevPAR Fundamentals</strong>Phuket luxury ADR at THB 7,005 (+3.9% YoY), RevPAR up 6.9% — benchmarks that directly validate hotel revenue modelling and underpin debt serviceability.</div>
+      </li>
+      <li>
+        <div class="bullet-icon"></div>
+        <div><strong>Diverse, Resilient Demand Base</strong>Post-pandemic Phuket draws Russian, Indian, European, Middle Eastern, Chinese and Japanese buyers — multi-source demand insulates against single-market risk.</div>
+      </li>
+      <li>
+        <div class="bullet-icon"></div>
+        <div><strong>Freehold Title Security</strong>Nor Sor 3 Kor freehold tenure — the gold standard for Thai title deeds. Full transferability and bankable collateral for project finance.</div>
+      </li>
+      <li>
+        <div class="bullet-icon"></div>
+        <div><strong>Adjacent Public Park Buffer</strong>Large public park to the west provides permanent unobstructed views, enhanced amenity, and eliminates the risk of future overshadowing development.</div>
+      </li>
+      <li>
+        <div class="bullet-icon"></div>
+        <div><strong>Land Appreciation Floor</strong>Patong CBD land appreciates at 6–10% p.a. conservatively. Even a land-bank hold strategy yields compelling capital returns in 3–5 years without development risk.</div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ═══════ SECTION 6 — RISKS ═══════ -->
+<section>
+  <div class="wrapper">
+    <div class="section-header">
+      <div class="section-num">06</div>
+      <div class="section-title-block">
+        <div class="section-eyebrow">Due Diligence</div>
+        <div class="section-title">Risk Register & Mitigants</div>
+      </div>
+    </div>
+
+    <div class="risk-grid">
+      <div class="risk-item low">
+        <div class="risk-badge low">Low Risk</div>
+        <div class="risk-title">Location & Demand Risk</div>
+        <div class="risk-desc">Patong is Phuket's highest-traffic zone. 8.8M annual arrivals, 79.5%+ hotel occupancy and growing digital-nomad / long-stay segment provide structural demand floor.</div>
+      </div>
+      <div class="risk-item low">
+        <div class="risk-badge low">Low Risk</div>
+        <div class="risk-title">Title & Ownership Risk</div>
+        <div class="risk-desc">Nor Sor 3 Kor freehold is the highest-quality Thai title. Recommend standard due diligence: title search, encumbrance check, land boundary survey.</div>
+      </div>
+      <div class="risk-item med">
+        <div class="risk-badge med">Medium Risk</div>
+        <div class="risk-title">Zoning / Height Legislation</div>
+        <div class="risk-desc">60m height uplift is proposed, not yet enacted. Current Commercial Zone already permits viable development. New zoning is upside optionality, not base case dependency.</div>
+      </div>
+      <div class="risk-item med">
+        <div class="risk-badge med">Medium Risk</div>
+        <div class="risk-title">Construction Cost & Timeline</div>
+        <div class="risk-desc">Material cost inflation and contractor availability in Phuket remain watch items. Fixed-price EPC contract with reputable contractor strongly recommended. Buffer 15% contingency.</div>
+      </div>
+      <div class="risk-item med">
+        <div class="risk-badge med">Medium Risk</div>
+        <div class="risk-title">Currency & FX Risk</div>
+        <div class="risk-desc">USD/THB fluctuations affect foreign investor capital deployment. Thai Baht has shown relative stability. Revenue is THB-denominated; natural hedge for local operators.</div>
+      </div>
+      <div class="risk-item low">
+        <div class="risk-badge low">Low Risk</div>
+        <div class="risk-title">Market Competition</div>
+        <div class="risk-desc">41 hotel projects in Phuket pipeline 2026–2030 are primarily in Bang Tao and Kamala. Patong CBD new supply is extremely limited — competitive moat is structural.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ VERDICT ═══════ -->
+<section style="border-bottom:none;">
+  <div class="wrapper">
+    <div class="verdict-box">
+      <div style="font-size:0.62rem;letter-spacing:0.3em;color:var(--gold);text-transform:uppercase;margin-bottom:10px;">CFO / Senior Analyst Verdict</div>
+      <div class="verdict-title">A Generational CBD Land Acquisition</div>
+      <p class="verdict-text">
+        At ฿281,250 per sq.m, this site is priced at a discount to its intrinsic development value and land scarcity premium. With Phuket's proven hospitality fundamentals — 79.5% hotel occupancy, THB 7,005 ADR, and 6–10% annual land appreciation — the risk-adjusted return profile across all three development scenarios materially exceeds regional alternatives. The proposed 60-metre height legislation represents a binary upside catalyst that could re-rate the site value by 50–95%. For an institutional investor, family office, or hospitality developer seeking irreplaceable Patong CBD exposure, this is a compelling, time-sensitive opportunity.
+      </p>
+      <div style="margin-top:20px;display:flex;justify-content:center;gap:12px;flex-wrap:wrap;">
+        <span class="pill">IRR 18–30%</span>
+        <span class="pill">Freehold Title</span>
+        <span class="pill">Scarcity Asset</span>
+        <span class="pill">60m Upside Catalyst</span>
+        <span class="pill">฿900M Asking</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ CONTACT FOOTER ═══════ -->
+<footer class="contact-footer">
+  <div class="wrapper">
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px;">
+          <div class="brand-diamond"></div>
+          <div class="brand-name" style="font-size:1rem;">Joe Collection</div>
+        </div>
+        <h3>Monthon Mahakijdumrongnukul</h3>
+        <p>Exclusive Land Advisor · Patong Beach, Phuket</p>
+        <p style="margin-top:10px;">📱 <a href="tel:+66806578387">+66 80-657-8387</a></p>
+        <p>✉️ <a href="mailto:joecollection.m@gmail.com">joecollection.m@gmail.com</a></p>
+        <p style="margin-top:10px;font-size:0.62rem;color:rgba(168,168,184,0.5);">Phra Metta Road (Sai 3 Kor), Patong, Kathu District, Phuket 83150</p>
+      </div>
+      <div style="text-align:center;">
+        <div style="font-size:0.6rem;letter-spacing:0.2em;color:var(--silver);text-transform:uppercase;margin-bottom:10px;">Enquire Now</div>
+        <button class="contact-cta" onclick="window.location.href='tel:+66806578387'">Schedule Viewing</button>
+        <div style="margin-top:12px;font-size:0.58rem;color:rgba(168,168,184,0.4);">Strictly by appointment</div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class="gold-rule"></div>
+<div class="disclaimer">
+  This investment prospectus has been prepared for informational purposes only and does not constitute financial, legal or investment advice. All financial projections are indicative estimates based on market data from Knight Frank Thailand, Cushman &amp; Wakefield, C9 Hotelworks, JLL Asia Pacific, CBRE Thailand and publicly available sources (2025–2026). Actual results may vary materially. Prospective investors should conduct independent due diligence and seek professional advice before making any investment decision. All prices in Thai Baht (฿). USD equivalent calculated at ฿36.40/USD. Prepared by Joe Collection · May 2026.
+</div>
+
+</body>
+</html>
